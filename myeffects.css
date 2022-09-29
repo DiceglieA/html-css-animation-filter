@@ -94,3 +94,96 @@
     border-radius: 25px;
     transform: scale(1.5);
 }
+
+/* esercizio 10 */
+
+.ex-10-icon {
+    animation-name: loading;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+/* esercizio 11 */
+
+.ex-11-icon:hover {
+    animation-name: load;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: linetop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+} 
+  
+  @keyframes linetop {
+    0% {
+      left: 10%;
+  }
+    50% {
+      left: 60%
+  }
+    100% {
+      left: 10%;
+  }
+
+} 
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: linebottom;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+} 
+  
+  @keyframes linebottom {
+    0% {
+      right: 10%;
+  }
+    50% {
+      right: 60%
+  }
+    100% {
+      right: 10%;
+  }
+} 
